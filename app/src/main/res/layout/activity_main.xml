@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="48sp"
+        android:textColor="#000000"
+        android:background="#FFFFFF"
+        android:padding="16dp"
+        android:gravity="end" />
+
+    <GridLayout
+        android:id="@+id/buttonGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/display"
+        android:rowCount="5"
+        android:columnCount="4">
+
+        <!-- Кнопки калькулятора -->
+        <Button
+            style="@style/CalculatorButtonStyle"
+            android:text="7" />
+        <Button
+            style="@style/CalculatorButtonStyle"
+            android:text="8" />
+        <Button
+            style="@style/CalculatorButtonStyle"
+            android:text="9" />
+        <Button
+            style="@style/CalculatorButtonStyle"
+            android:text="/" />
+
+        <Button
+            style="@style/CalculatorButtonStyle"
+            android:text="4" />
+        <Button
+            style="@style/CalculatorButtonStyle"
+            android:text="5" />
+        <Button
+            style="@style/CalculatorButtonStyle"
+            android:text="6" />
+        <Button
+            style="@style/CalculatorButtonStyle"
+            android:text="*" />
+
+        <Button
+            style="@style/CalculatorButtonStyle"
+            android:text="1" />
+        <Button
+            style="@style/CalculatorButtonStyle"
+            android:text="2" />
+        <Button
+            style="@style/CalculatorButtonStyle"
+            android:text="3" />
+        <Button
+            style="@style/CalculatorButtonStyle"
+            android:text="-" />
+
+        <Button
+            style="@style/CalculatorButtonStyle"
+            android:text="C" />
+        <Button
+            style="@style/CalculatorButtonStyle"
+            android:text="0" />
+        <Button
+            style="@style/CalculatorButtonStyle"
+            android:text="" /> <!-- Пустая кнопка для выравнивания -->
+
+        <Button
+            style="@style/CalculatorButtonStyle"
+            android:text="+" />
+
+    </GridLayout>
+</RelativeLayout>
